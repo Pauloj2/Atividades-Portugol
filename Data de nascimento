@@ -1,0 +1,26 @@
+Algoritmo "pseodocodi_cocondicional"
+// 2. Faça um algoritmo que recebe a data de nascimento e a
+//data atual. Se o usuário tiver 18 anos imprima a
+//mensagem “Bem vindo a vida adulta”. Caso contrário
+//imprima a mensagem “Nada a dizer”.
+//
+
+Var
+  nasc, ano, idade: Inteiro
+
+
+Inicio
+      escreval ("digite o seu ano de nascimento:"  )
+      leia (nasc)
+      escrevaL ("digite o ano atual"  )
+      leia (ano)
+
+      idade <- ano - nasc
+      escreva ("Voce neste ano que estamos voce vai ter ", idade , " anos")
+      
+      Se (idade= 18 ) entao
+         escreval (" Bem vindo a vida adulta")
+      senao
+         escreval (" Nada a dizer ")
+         
+      fimse
