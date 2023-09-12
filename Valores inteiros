@@ -1,0 +1,32 @@
+Algoritmo "semnome"
+//3. Faça um algoritmo que leia dois valores inteiros A e B se
+//os valores forem iguais deverá se somar os dois. Se A for
+//menor que B deverá subtrair o valor B de A. Se B for
+//menor que A deverá multiplicar os dois valores. Ao final
+//imprima qual cálculo foi realizado e o resultado.
+
+
+Var
+   A, B, soma, subtrair, multiplicar : Inteiro
+
+
+Inicio
+   escreva ("digite um valor inteiro:  ")
+   leia (A)
+   escreva ("digite outro valor inteiro:  ")
+   leia (B)
+
+   se (A = B) entao
+      soma <- A + B
+      escreval ("A soma dos dois valores e: " , soma)
+   senao
+      se (A < B) entao
+         subtrair <- B - A
+         escreval ("A subtracao dos dois valore e: ", subtrair)
+      senao
+         se (B < A) entao
+            multiplicar <- A * B
+            escreval ("A multiplicacao dos valores e: ", multiplicar)
+         fimse
+      fimse
+   fimse
