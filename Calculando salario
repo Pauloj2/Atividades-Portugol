@@ -1,0 +1,32 @@
+Algoritmo "semnome"
+// 6. Faça um algoritmo efetue o cálculo do reajuste de salário de um
+//funcionário. Considere que o funcionário deverá receber um reajuste de
+//15% caso seu salário seja menor que 500. Se o salário for maior ou igual a
+//500, mas menor ou igual a 1000, seu reajuste será de 10%; caso seja ainda
+//maior que 1000 o reajuste deverá ser de 5%”
+// O problema estabelece três condições para calcular o reajuste do salário:
+// 1) Salário < 500, reajuste de 15%
+// 2) Salário > = 500, mas <= 1000, reajuste de 10%
+// 3) Salário > 1000, reajuste de 5%
+
+Var
+   salario, r1, r2, r3 : real
+
+
+Inicio
+   escreva ("digite o valor do seu salario: ")
+   leia (salario)
+   se (salario < 500) entao
+      r1 <- salario +(salario * (15/100))
+      escreva ("o salario vai ser de:  ", r1 ," reais")
+   senao
+      se ((salario >= 500) e (salario <= 1000)) entao
+         r2 <- salario +(salario * (10/100))
+         escreva ("o salario vai ser de:  ",r2," reais")
+      senao
+         se (salario > 1000) entao
+            r3 <- salario +(salario * (5/100))
+            escreva ("o salario vai ser de:  ",r3," reais")
+         fimse
+      fimse
+   fimse
