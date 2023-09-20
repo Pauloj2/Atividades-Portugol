@@ -1,0 +1,21 @@
+Algoritmo "Cont_100"
+// Faça um algoritmo que conte de 0 a 100 e
+//mostre cada um dos valores na tela.
+
+
+Var
+
+   contador : inteiro
+
+Inicio
+    contador <- 0
+    Enquanto (contador <= 100 ) faca
+      escreval (contador)
+      contador <- contador + 1
+    fimenquanto
+    
+    escreval ("=======================")
+    escreval ("terminei de contar")
+    escreva  ("=======================")
+
+Fimalgoritmo
