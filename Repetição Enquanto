@@ -1,0 +1,24 @@
+Algoritmo "Rept_dobro"
+// 
+// Escreva um algoritmo que leia diversos
+//números positivos e escreva, para cada um,
+//seu dobro. Quando o usuário digitar um
+//número negativo o programa deve encerrar
+//
+Var
+   N : REAL
+
+
+Inicio
+      Escreva ("digite um numero:  ")
+      Leia (N)
+      
+      Enquanto (N < 0) faca
+         Escreva ("Digite um numero positivo ")
+         Leia (N)
+      fimenquanto
+      
+      N <- N * 2
+      Escreva ("O dobro do numero e : ",N)
+      
+Fimalgoritmo
