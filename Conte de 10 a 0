@@ -1,0 +1,19 @@
+Algoritmo "cont_de_10_0"
+//  1- Conte de 10 a 0 usando estrutura de repetição
+
+Var
+  contador : inteiro
+
+
+Inicio
+    contador <- 10
+    enquanto (contador >= 0 ) faca
+        escreval (contador)
+        contador <- contador-1
+    fimenquanto
+
+    escreval ("=======================")
+    escreval (" Espero ter ajudado :) ")
+    escreval ("=======================")
+  
+Fimalgoritmo
