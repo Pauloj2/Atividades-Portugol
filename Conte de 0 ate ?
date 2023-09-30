@@ -1,0 +1,26 @@
+Algoritmo "contAteX"
+// 
+//  Conte de 0 ate o numero que o usuario quiser
+//
+Var
+   valor, contador : inteiro
+
+
+Inicio
+   contador <- 0
+   escreva ("Quer contar ate quanto : ")
+   leia (valor)
+   escreval ("======================")
+   escreval ("Contando de 0 a",valor)
+   escreval  ("======================")
+
+   enquanto ( contador <= valor ) faca
+      escreval (contador)
+      contador <- contador + 1
+   fimenquanto
+   escreval ("=====================")
+   escreval ("Terminei de contar")
+   escreva  ("=====================")
+
+
+Fimalgoritmo
