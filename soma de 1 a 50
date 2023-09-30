@@ -1,0 +1,20 @@
+Algoritmo "enquanto_1a50"
+// Faca um algoritmo que calcule e mostre a soma dos 50 primeiros números começando em 1
+//(1+2+3+4+...+50)
+
+Var
+   num, soma : Inteiro
+
+Inicio
+   num  <- 0
+   soma <- 0
+   Enquanto (num < 50) faca
+         escreval (num)
+         num <- num + 1
+         soma <- soma + num
+   Fimenquanto
+   escreval ("============================")
+   escreval ("A soma dos numeros é: ", soma)
+   escreval ("============================")
+
+Fimalgoritmo
