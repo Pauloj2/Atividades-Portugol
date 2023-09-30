@@ -1,0 +1,24 @@
+Algoritmo "Receba_num"
+// Escreva um algoritmo que receba 1
+//número maior ou igual a zero e imprima o valor.
+//Se o número for negativo, o programa deve pedir
+//para que o usuário digite o número novamente  
+
+Var
+    N : real
+
+Inicio
+     escreva ("Digite um número maior ou igual a zero: ")
+     leia (N)
+     
+     enquanto (N < 0) faca
+         escreva ("Digite um numero novamente: ")
+         leia (N)
+     fimenquanto
+     escreval ("==========================")
+     escreval ("O numero digitado foi: " ,N)
+     escreval ("==========================")
+Fimalgoritmo
+
+
+
