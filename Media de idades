@@ -1,0 +1,28 @@
+Algoritmo "Repit_Ate_media"
+
+// Faça um algoritmo que receba a idade de
+//várias pessoas, ao final, mostre a idade
+//média da população em questão.
+
+
+Var
+   idade, P , cont : inteiro
+   M , soma: real
+Inicio
+   soma <- 0
+   
+   escreva ("Qual a quantidade de pessoas :  ")
+   leia (P)
+   Repita
+      escreva ("Digite a idade:  ")
+      leia (idade)
+      soma <- soma + idade
+      M <- soma / P
+      cont <- cont + 1
+   Ate (cont = P)
+   
+   escreval ("------------------------------------")
+   escreval ("A idade media da população e :  " , M)
+   escreva  ("------------------------------------")
+
+Fimalgoritmo
