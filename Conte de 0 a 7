@@ -1,0 +1,18 @@
+Algoritmo "cont_de_0ate7"
+// 2- conte de 0 a 7
+//
+//
+Var
+   contador : inteiro
+
+
+Inicio
+   contador <- 0
+   enquanto (contador <= 7 ) faca
+      escreval (contador)
+      contador <- contador + 1
+   fimenquanto
+   escreval ("=======================")
+   escreval ("terminei de contar")
+   escreva  ("=======================")
+Fimalgoritmo
