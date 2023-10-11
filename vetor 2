@@ -1,0 +1,24 @@
+Algoritmo "atv2vetor"
+// 2. Faça um programa que peça ao usuário para
+// digitar 10 números reais. Ao final imprima
+// cada valor na ordem inversa à leitura
+
+
+Var
+   num : vetor[0..9] de Real
+   i : inteiro
+
+Inicio
+   para i de 0 ate 9 passo 1 faca
+      escreval ("Digite um numero : ")
+      leia (num[i])
+   fimpara
+
+   para i de 9 ate 0 passo -1 faca
+      escreval (num[i])
+   fimpara
+
+
+
+
+Fimalgoritmo
