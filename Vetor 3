@@ -1,0 +1,29 @@
+Algoritmo "ativ3BVetor"
+//Você precisa criar um programa que receba a
+//matricula e a nota final de 5 alunos. Ao final, o
+//programa deve escrever as matrículas dos
+//alunos que possuem nota superior à média
+//da classe.
+Var
+   num : vetor[0..4] de inteiro
+   notf : vetor[0..4] de  Real
+   i : inteiro
+   SN, MT : real
+Inicio
+   para i de 0 ate 4 passo 1 faca
+      escreva ("Digite o numero da matricola do", i ,"° aluno: ")
+      leia (num[i])
+      escreva ("Digite a nota final do", i ,"° aluno: ")
+      leia (notf[i])
+      SN <- SN + notf[i]
+      escreval ( )
+   fimpara
+   MT <- SN / 5
+   escreval ("A media e ",MT)
+   para i de 0 ate 4 passo 1 faca
+      se (notf[i] > MT) entao
+         escreval ("ALUNOS COM NOTA MAIOR QUE A MEDIA DA CLASSE.")
+         escreval (" - ",num[i])
+      fimse
+   fimpara
+Fimalgoritmo
