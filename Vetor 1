@@ -1,0 +1,31 @@
+Algoritmo "semnome"
+// 1. Faça um programa que:
+//Crie um vetor de 4 posições inicializados com valor 2
+//  em cada uma das posições.
+//Atribua os valores 3,4,7,5 a cada posição do vetor,
+//  respectivamente, um a um.
+//Percorra o vetor somando 4 ao valor armazenado
+//  em cada posição.
+//Imprima o vetor com valores atualizados, um valor
+//  por linha
+
+Var
+  i : inteiro
+  vet : vetor[0..3] de inteiro
+
+Inicio
+  para i de 0 ate 3 passo 1 faca
+     vet[i] <- 2
+  fimpara
+  vet[0] <- 3
+  vet[1] <- 4
+  vet[2] <- 7
+  vet[3] <- 5
+  escreva ()
+  para i de 0 ate 3 passo 1 faca
+     vet[i] <- vet[i] + 4
+     escreval("O valor do veotor de posição", i ," é : " ,vet[i])
+  fimpara
+
+
+Fimalgoritmo
