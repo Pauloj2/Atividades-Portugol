@@ -1,0 +1,39 @@
+Algoritmo "vetorclima"
+// FAÇA UM PROGAMA QUE RECEBA ENTRADAS COM O CLIMA PARA 7 DIAS DA
+//SEMANA, SENDO:'S' SOL, 'C' CHUVA E 'N' NUBLADO.
+//AO FINAL, APRESENTE NA TELA A PORCENTAGEM DE DIAS ENSOLARADOS
+//TAMBÉM COLOQUE A SOMA DE DIAS CHUVOSOS.
+
+
+Var
+   i : inteiro
+   clima : vetor[0..6] de caractere
+   ensolar : inteiro
+   chuvoso : inteiro
+   porcent : real
+Inicio
+   ensolar <- 0
+   chuvoso <- 0
+   porcent <- 0
+   escreval ("Para difinir o clima digite a letra correspondente")
+   escreval ("s: SOL    ")
+   escreval ("c: CHUVA  ")
+   escreval ("n: NUBLADO")
+   escreval ()
+   para i de 0 ate 6 passo 1 faca
+         escreval ("Qual o clima do ",i,"° dia :")
+         leia (clima[i])
+      se (clima[i] = "s") entao
+         ensolar <- ensolar + 1
+      senao
+         se (clima[i] = "c") entao
+            chuvoso <- chuvoso + 1
+         fimse
+      fimse
+   fimpara
+   //APRESENTE NA TELA A PORCENTAGEM DE DIAS ENSOLARADOS
+   porcent <- (ensolar/7)*100
+   escreval ("A PORCENTAGEM DE DIAS ENSOLARADOS É: ",porcent:6:2,"%")
+   escreval ("A SOMA DE DIAS CHUVOSOS É: ",chuvoso)
+
+Fimalgoritmo
