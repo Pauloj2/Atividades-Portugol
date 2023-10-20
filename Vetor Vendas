@@ -1,0 +1,29 @@
+Algoritmo "vetor_vendas"
+//FAÇA UM PROGRAMA QUE RECEBA O VALOR DE VENDA EM REAIS DE 10 PRODUTOS.
+//CRIE UM SEGUNDO VETOR COM O VALOR DE COMISSÃO DE CADA UM
+//DESSES PRODUTOS. IMPRIMA ESSE SEGUNDO VALOR NA TELA, BEM COMO O
+//TOTAL DE COMISSÃO RECEBIDA PELO FUNCIONÁRIO, SABENDO QUE A COMISSÃO É DE 8%.
+
+
+Var
+  valor : vetor[0..9] de real
+  comissao : vetor[0..9] de real
+  i, cont : inteiro
+Inicio
+  cont <- 1
+  //O cont vai ser usado para numerar a venda.
+  para i de 0 ate 9 passo 1 faca
+     escreva ("QUAL O VALOR DA ",cont,"° VENDA ?: ")
+     leia (valor[i])
+     escreval ("==================================")
+     cont <- cont + 1
+  fimpara
+  cont <- 1
+  para i de 0 ate 9 passo 1 faca
+     comissao[i] <- valor[i] * 0.08
+     cont <- cont + 1
+  fimpara
+  escreval ("O valor da segunda venda é: ",valor[1])
+  escreval ("============================================")
+  escreval ("O valor da segunda comissão é: ",comissao[1])
+Fimalgoritmo
