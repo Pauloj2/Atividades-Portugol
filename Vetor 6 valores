@@ -1,0 +1,36 @@
+Algoritmo "Vetor6valores"
+// FAÇA UM PROGRAMA QUE RECEBA 6 VALORES EM UM VETOR.
+// ENCONTRE O MAIOR VALOR DESSE VETOR E AO FINAL
+// IMPRIMA, O MAIOR VALOR, SEGUIDO DA DIFERENÇA DE
+// CADA VALOR DO VETOR PARA ESSE MAIOR VALOR.
+// EXEMPLO: ENTRADA VETOR 2,5,3,1,2,4
+//	SAÍDA: MAIOR 5, DIFERENCA: 3,0,2,4,3,1
+
+Var
+   num : vetor[0..5] de real
+   i : inteiro
+   maior : real
+Inicio
+   maior <- 0
+   para i de 0 ate 5 passo 1 faca
+      escreval ("Digite um valor: ")
+      leia (num[i])
+      se (num[i] > maior) entao
+         maior <- num[i]
+      fimse
+   fimpara
+   escreval ()
+   para i de 0 ate 5 passo 1 faca
+      escreva (num[i])
+   fimpara
+   escreval()
+   escreva ("Maior valor:",maior )
+   escreval ()
+   escreva ("Diferença:")
+   para i de 0 ate 5 passo 1 faca
+      num[i] <- maior - num[i]
+      escreva (num[i])
+   fimpara
+
+   
+Fimalgoritmo
